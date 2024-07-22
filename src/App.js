@@ -29,7 +29,7 @@ const App = () => {
             <button onClick={plusNum} className='but'>+</button>
             <button onClick={minusNum} className='but' disabled={num<=1}>-</button>
             <button onClick={increfive} className='but'>+5</button>
-            <button onClick={decrefive} className='but'>-5</button>
+            <button onClick={decrefive} className='but' disabled={num<=1}>-5</button>
           </div>
         </div>
       </div>
