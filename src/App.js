@@ -12,6 +12,13 @@ const App = () => {
     setNum(num - 1);
   };
 
+  const increfive=()=>{
+    setNum(num+5);
+  };
+
+  const decrefive=()=>{
+    setNum(num-5);
+  }
   return (
     <>
       <div className='main_div'>
@@ -20,7 +27,9 @@ const App = () => {
           <div className='num-display'>{num}</div>
           <div className='button_section'>
             <button onClick={plusNum} className='but'>+</button>
-            <button onClick={minusNum} className='but'>-</button>
+            <button onClick={minusNum} className='but' disabled={num<=1}>-</button>
+            <button onClick={increfive} className='but'>+5</button>
+            <button onClick={decrefive} className='but'>-5</button>
           </div>
         </div>
       </div>
