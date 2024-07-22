@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 const App = () => {
-  const [num, setNum] = useState(0);
+  const [num, setNum] = useState(1);
 
   const plusNum = () => {
     setNum(num + 1);
